@@ -1,0 +1,39 @@
+button {
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+    box-shadow: $smooth-shadow;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: $smooth-shadow-hover;
+        background-position: 1% 50%;
+    }
+}
+
+.primary {
+    background: $button-primary;
+    background: linear-gradient(28deg, $button-primary-ligthen 0%, $button-primary 33%, $button-primary-ligthen 66%, $button-primary 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+}
+
+.back {
+    background: $button-back;
+    background: linear-gradient(28deg, $button-back-lighten 0%, $button-back 33%, $button-back-lighten 66%, $button-back 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+}
+
+.empty {
+    color: $primary;
+    font-size: 16px;
+    text-transform: none;
+    padding: 0;
+    background-color: transparent;
+}

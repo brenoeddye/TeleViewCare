@@ -1,0 +1,29 @@
+.authSidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 20%;
+    padding: 2rem;
+    border-radius: 30px;
+    transform: translate(155%, 50%);
+    border: 2px solid $box-color;
+    box-shadow: $smooth-shadow-hover;
+
+    h2 {
+        color: $primary;
+        text-align: center;
+    }
+
+    button.primary {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    input {
+        width: 88%;
+    }
+
+    p {
+        text-align: center;
+    }
+}
