@@ -3,4 +3,4 @@ import App from './App.vue';
 import router from './router'
 import './assets/styles/styles.scss';
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).use(router).mount('#app')

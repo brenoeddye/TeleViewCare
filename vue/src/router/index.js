@@ -1,29 +1,29 @@
-import { createWebHistory, createRouter } from "vue-router";
-import Home from "@/views/Home.vue";
-import Auth from "@/views/Authentication.vue";
-import Call from '@/views/Call.vue';
+import { createRouter, createWebHashHistory } from 'vue-router';
+import Auth from '../views/Authentication.vue';
+import Call from '../views/Call.vue';
+import Home from '../views/Home.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "Auth",
-    component: Auth,
+    path: '/',
+    name: 'auth',
+    component: Auth
   },
   {
-    path: "/home",
-    name: "Home",
-    component: Home,
+    path: '/consulta',
+    name: 'call',
+    component: Call
   },
   {
-    path: "/consulta",
-    name: "Call",
-    component: Call,
-  },
-];
+    path: '/home',
+    name: 'home',
+    component: Home
+  }
+]
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+  history: createWebHashHistory(),
+  routes
+})
 
-export default router;
+export default router
