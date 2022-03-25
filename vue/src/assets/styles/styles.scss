@@ -3,14 +3,24 @@
 @import './_buttons.scss';
 @import './_input.scss';
 
-@import './auth.scss';
 @import './all.scss';
+
+@import './auth.scss';
+@import './home.scss';
+@import './card.scss';
+@import './table.scss';
+@import './call.scss';
 
 body {
     font-family: 'Lato', sans-serif;
     background-color: $bg-color;
+    margin: 0;
 }
 
 p {
     color: $p-color;
+}
+
+h1, h4 {
+    color: $h-color;
 }

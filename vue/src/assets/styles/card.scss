@@ -1,0 +1,87 @@
+.card {
+    color: #fff;
+    padding: 0 1.5rem 2rem 1.5rem;
+    min-width: 90px;
+    min-height: 90px;
+    border-radius: 30px;
+    font-size: .9rem;
+    box-shadow: $smooth-shadow;
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+
+    &:hover {
+        box-shadow: $smooth-shadow-hover;
+        background-position: 1% 50%;
+
+        icon {
+            opacity: 1;
+            transform: scale(1.3);
+        }
+    }
+
+    icon {
+        position: absolute;
+        font-size: 2.8rem;
+        transform: rotate(-8deg);
+        opacity: .5;
+        right: 1.2rem;
+        transition: .4s;
+    }
+}
+
+.call {
+    background: linear-gradient(28deg, $button-call-ligthen 0%, $button-call 33%, $button-call-ligthen 66%, $button-call 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+    position: relative;
+
+    h3 {
+        padding-top: .9rem;
+    }
+
+    &::before {
+        content: '';
+        background: linear-gradient(28deg, $button-off 0%, $button-off-ligthen 80%);
+        border-radius: 50%;
+        width: 1.3rem;
+        height: 1.3rem;
+        right: 0;
+        position: absolute;
+    }
+}
+
+.search {
+    background: linear-gradient(28deg, $button-search-ligthen 0%, $button-search 33%, $button-search-ligthen 66%, $button-search 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+}
+
+.data {
+    background: linear-gradient(28deg, $button-data-ligthen 0%, $button-data 33%, $button-data-ligthen 66%, $button-data 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+}
+
+.help {
+    background: linear-gradient(28deg, $button-help-ligthen 0%, $button-help 33%, $button-help-ligthen 66%, $button-help 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+}
+
+.setting {
+    background: linear-gradient(28deg, $button-setting-ligthen 0%, $button-setting 33%, $button-setting-ligthen 66%, $button-setting 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+}
+
+.off {
+    background: linear-gradient(28deg, $button-off-ligthen 0%, $button-off 33%, $button-off-ligthen 66%, $button-off 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+
+    h3 {
+        padding-top: .9rem;
+    }
+}
+

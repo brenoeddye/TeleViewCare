@@ -1,0 +1,22 @@
+.homeCall {
+    margin-top: 2rem;
+
+    h1 {
+        text-align: center;
+    }
+
+    tbody {
+        background-color: white;
+        border-radius: 30px;
+        display: table;
+        width: 100%;
+        box-shadow: $smooth-shadow;
+
+        tr {
+            border-bottom: 2px solid #000;
+        }
+        td {
+            padding: 2rem;
+        }
+    }
+}
